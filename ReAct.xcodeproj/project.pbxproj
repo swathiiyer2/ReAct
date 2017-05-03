@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		DD1A5AF71EA7FB0B0028B509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A5AF61EA7FB0B0028B509 /* AppDelegate.swift */; };
-		DD1A5AF91EA7FB0B0028B509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A5AF81EA7FB0B0028B509 /* ViewController.swift */; };
 		DD1A5AFC1EA7FB0B0028B509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1A5AFA1EA7FB0B0028B509 /* Main.storyboard */; };
-		DD1A5AFE1EA7FB0B0028B509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD1A5AFD1EA7FB0B0028B509 /* Assets.xcassets */; };
 		DD1A5B011EA7FB0B0028B509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1A5AFF1EA7FB0B0028B509 /* LaunchScreen.storyboard */; };
 		DD1A5B0C1EA7FB0C0028B509 /* ReActTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A5B0B1EA7FB0C0028B509 /* ReActTests.swift */; };
 		DD1A5B171EA7FB0C0028B509 /* ReActUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A5B161EA7FB0C0028B509 /* ReActUITests.swift */; };
+		DD1A5B251EA7FBBA0028B509 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A5B241EA7FBBA0028B509 /* LoginViewController.swift */; };
+		DD1A5B271EA7FBE80028B509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A5B261EA7FBE80028B509 /* ViewController.swift */; };
+		DD34B9451EB68C0D00DAE999 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD34B9441EB68C0D00DAE999 /* QuartzCore.framework */; };
+		DDBD2F4E1EBA962100826121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBD2F4D1EBA962100826121 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C924F5DD2B91681F37242B2 /* Pods-ReAct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReAct.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReAct/Pods-ReAct.release.xcconfig"; sourceTree = "<group>"; };
 		DD1A5AF31EA7FB0B0028B509 /* ReAct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReAct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD1A5AF61EA7FB0B0028B509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD1A5AF81EA7FB0B0028B509 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD1A5AFB1EA7FB0B0028B509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DD1A5AFD1EA7FB0B0028B509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD1A5B001EA7FB0B0028B509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD1A5B021EA7FB0B0028B509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD1A5B071EA7FB0C0028B509 /* ReActTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReActTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +48,11 @@
 		DD1A5B121EA7FB0C0028B509 /* ReActUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReActUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD1A5B161EA7FB0C0028B509 /* ReActUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReActUITests.swift; sourceTree = "<group>"; };
 		DD1A5B181EA7FB0C0028B509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD1A5B241EA7FBBA0028B509 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DD1A5B261EA7FBE80028B509 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD34B9441EB68C0D00DAE999 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DDBD2F4D1EBA962100826121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8A16E1313F7768ACC063BA2 /* Pods-ReAct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReAct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReAct/Pods-ReAct.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD34B9451EB68C0D00DAE999 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2350B5D59F7FEC139BBCB2FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD34B9441EB68C0D00DAE999 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4600C9FF22FC8921E2CC85DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8A16E1313F7768ACC063BA2 /* Pods-ReAct.debug.xcconfig */,
+				2C924F5DD2B91681F37242B2 /* Pods-ReAct.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DD1A5AEA1EA7FB0B0028B509 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +105,8 @@
 				DD1A5B0A1EA7FB0C0028B509 /* ReActTests */,
 				DD1A5B151EA7FB0C0028B509 /* ReActUITests */,
 				DD1A5AF41EA7FB0B0028B509 /* Products */,
+				4600C9FF22FC8921E2CC85DB /* Pods */,
+				2350B5D59F7FEC139BBCB2FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +124,12 @@
 			isa = PBXGroup;
 			children = (
 				DD1A5AF61EA7FB0B0028B509 /* AppDelegate.swift */,
-				DD1A5AF81EA7FB0B0028B509 /* ViewController.swift */,
+				DD1A5B261EA7FBE80028B509 /* ViewController.swift */,
 				DD1A5AFA1EA7FB0B0028B509 /* Main.storyboard */,
-				DD1A5AFD1EA7FB0B0028B509 /* Assets.xcassets */,
+				DD1A5B241EA7FBBA0028B509 /* LoginViewController.swift */,
 				DD1A5AFF1EA7FB0B0028B509 /* LaunchScreen.storyboard */,
 				DD1A5B021EA7FB0B0028B509 /* Info.plist */,
+				DDBD2F4D1EBA962100826121 /* Assets.xcassets */,
 			);
 			path = ReAct;
 			sourceTree = "<group>";
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD1A5B1B1EA7FB0C0028B509 /* Build configuration list for PBXNativeTarget "ReAct" */;
 			buildPhases = (
+				4E81972655F7662B4FEC70C1 /* [CP] Check Pods Manifest.lock */,
 				DD1A5AEF1EA7FB0B0028B509 /* Sources */,
 				DD1A5AF01EA7FB0B0028B509 /* Frameworks */,
 				DD1A5AF11EA7FB0B0028B509 /* Resources */,
+				29629D45F8AD1D71C70115B9 /* [CP] Embed Pods Frameworks */,
+				FE0886F7D2F2859C2978129F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,7 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD1A5B011EA7FB0B0028B509 /* LaunchScreen.storyboard in Resources */,
-				DD1A5AFE1EA7FB0B0028B509 /* Assets.xcassets in Resources */,
+				DDBD2F4E1EBA962100826121 /* Assets.xcassets in Resources */,
 				DD1A5AFC1EA7FB0B0028B509 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,12 +287,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29629D45F8AD1D71C70115B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReAct/Pods-ReAct-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E81972655F7662B4FEC70C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE0886F7D2F2859C2978129F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReAct/Pods-ReAct-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD1A5AEF1EA7FB0B0028B509 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD1A5AF91EA7FB0B0028B509 /* ViewController.swift in Sources */,
+				DD1A5B271EA7FBE80028B509 /* ViewController.swift in Sources */,
+				DD1A5B251EA7FBBA0028B509 /* LoginViewController.swift in Sources */,
 				DD1A5AF71EA7FB0B0028B509 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +492,7 @@
 		};
 		DD1A5B1C1EA7FB0C0028B509 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8A16E1313F7768ACC063BA2 /* Pods-ReAct.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 63VJ5F24HJ;
@@ -426,6 +506,7 @@
 		};
 		DD1A5B1D1EA7FB0C0028B509 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C924F5DD2B91681F37242B2 /* Pods-ReAct.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 63VJ5F24HJ;
@@ -514,6 +595,7 @@
 				DD1A5B1D1EA7FB0C0028B509 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD1A5B1E1EA7FB0C0028B509 /* Build configuration list for PBXNativeTarget "ReActTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +604,7 @@
 				DD1A5B201EA7FB0C0028B509 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD1A5B211EA7FB0C0028B509 /* Build configuration list for PBXNativeTarget "ReActUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +613,7 @@
 				DD1A5B231EA7FB0C0028B509 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
