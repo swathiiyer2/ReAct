@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EE552F1092ED8A06EBDCD18 /* libPods-ReAct.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B31276A7057795566EA90CB /* libPods-ReAct.a */; };
 		DD1A5AF71EA7FB0B0028B509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A5AF61EA7FB0B0028B509 /* AppDelegate.swift */; };
 		DD1A5AFC1EA7FB0B0028B509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1A5AFA1EA7FB0B0028B509 /* Main.storyboard */; };
 		DD1A5B011EA7FB0B0028B509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1A5AFF1EA7FB0B0028B509 /* LaunchScreen.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B31276A7057795566EA90CB /* libPods-ReAct.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReAct.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C924F5DD2B91681F37242B2 /* Pods-ReAct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReAct.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReAct/Pods-ReAct.release.xcconfig"; sourceTree = "<group>"; };
 		DD1A5AF31EA7FB0B0028B509 /* ReAct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReAct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD1A5AF61EA7FB0B0028B509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD34B9451EB68C0D00DAE999 /* QuartzCore.framework in Frameworks */,
+				9EE552F1092ED8A06EBDCD18 /* libPods-ReAct.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				DD34B9441EB68C0D00DAE999 /* QuartzCore.framework */,
+				2B31276A7057795566EA90CB /* libPods-ReAct.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
