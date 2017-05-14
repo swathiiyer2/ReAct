@@ -16,7 +16,15 @@
 		DD1A5B251EA7FBBA0028B509 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A5B241EA7FBBA0028B509 /* LoginViewController.swift */; };
 		DD1A5B271EA7FBE80028B509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A5B261EA7FBE80028B509 /* ViewController.swift */; };
 		DD34B9451EB68C0D00DAE999 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD34B9441EB68C0D00DAE999 /* QuartzCore.framework */; };
+		DDAAC67C1EC853CD00466602 /* LastStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC67B1EC853CD00466602 /* LastStepViewController.swift */; };
+		DDAAC6811EC8600500466602 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC6801EC8600500466602 /* EditProfileViewController.swift */; };
+		DDAAC6831EC8603C00466602 /* InvalidPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC6821EC8603C00466602 /* InvalidPasswordViewController.swift */; };
+		DDAAC6861EC8606D00466602 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC6851EC8606D00466602 /* NetworkingService.swift */; };
+		DDAAC6881EC8609B00466602 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC6871EC8609B00466602 /* ResetPasswordViewController.swift */; };
+		DDAAC68A1EC8610100466602 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC6891EC8610100466602 /* SignUpViewController.swift */; };
 		DDBD2F4E1EBA962100826121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBD2F4D1EBA962100826121 /* Assets.xcassets */; };
+		DDC54A9A1EC83C190094503C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC54A991EC83C190094503C /* SettingsTableViewController.swift */; };
+		DDD7BE2D1EC834A300DF2A0E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD7BE2C1EC834A300DF2A0E /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +61,15 @@
 		DD1A5B241EA7FBBA0028B509 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DD1A5B261EA7FBE80028B509 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD34B9441EB68C0D00DAE999 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DDAAC67B1EC853CD00466602 /* LastStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastStepViewController.swift; sourceTree = "<group>"; };
+		DDAAC6801EC8600500466602 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		DDAAC6821EC8603C00466602 /* InvalidPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvalidPasswordViewController.swift; sourceTree = "<group>"; };
+		DDAAC6851EC8606D00466602 /* NetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		DDAAC6871EC8609B00466602 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		DDAAC6891EC8610100466602 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DDBD2F4D1EBA962100826121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDC54A991EC83C190094503C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		DDD7BE2C1EC834A300DF2A0E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F8A16E1313F7768ACC063BA2 /* Pods-ReAct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReAct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReAct/Pods-ReAct.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,10 +143,10 @@
 		DD1A5AF51EA7FB0B0028B509 /* ReAct */ = {
 			isa = PBXGroup;
 			children = (
+				DDAAC6841EC8605D00466602 /* Models */,
+				DDAAC67F1EC85FC600466602 /* View Controllers */,
 				DD1A5AF61EA7FB0B0028B509 /* AppDelegate.swift */,
-				DD1A5B261EA7FBE80028B509 /* ViewController.swift */,
 				DD1A5AFA1EA7FB0B0028B509 /* Main.storyboard */,
-				DD1A5B241EA7FBBA0028B509 /* LoginViewController.swift */,
 				DD1A5AFF1EA7FB0B0028B509 /* LaunchScreen.storyboard */,
 				DD1A5B021EA7FB0B0028B509 /* Info.plist */,
 				DDBD2F4D1EBA962100826121 /* Assets.xcassets */,
@@ -154,6 +170,30 @@
 				DD1A5B181EA7FB0C0028B509 /* Info.plist */,
 			);
 			path = ReActUITests;
+			sourceTree = "<group>";
+		};
+		DDAAC67F1EC85FC600466602 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A5B261EA7FBE80028B509 /* ViewController.swift */,
+				DDAAC67B1EC853CD00466602 /* LastStepViewController.swift */,
+				DD1A5B241EA7FBBA0028B509 /* LoginViewController.swift */,
+				DDD7BE2C1EC834A300DF2A0E /* SettingsViewController.swift */,
+				DDC54A991EC83C190094503C /* SettingsTableViewController.swift */,
+				DDAAC6801EC8600500466602 /* EditProfileViewController.swift */,
+				DDAAC6821EC8603C00466602 /* InvalidPasswordViewController.swift */,
+				DDAAC6871EC8609B00466602 /* ResetPasswordViewController.swift */,
+				DDAAC6891EC8610100466602 /* SignUpViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DDAAC6841EC8605D00466602 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDAAC6851EC8606D00466602 /* NetworkingService.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,9 +384,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAAC68A1EC8610100466602 /* SignUpViewController.swift in Sources */,
+				DDC54A9A1EC83C190094503C /* SettingsTableViewController.swift in Sources */,
 				DD1A5B271EA7FBE80028B509 /* ViewController.swift in Sources */,
+				DDAAC67C1EC853CD00466602 /* LastStepViewController.swift in Sources */,
+				DDAAC6861EC8606D00466602 /* NetworkingService.swift in Sources */,
 				DD1A5B251EA7FBBA0028B509 /* LoginViewController.swift in Sources */,
 				DD1A5AF71EA7FB0B0028B509 /* AppDelegate.swift in Sources */,
+				DDD7BE2D1EC834A300DF2A0E /* SettingsViewController.swift in Sources */,
+				DDAAC6881EC8609B00466602 /* ResetPasswordViewController.swift in Sources */,
+				DDAAC6811EC8600500466602 /* EditProfileViewController.swift in Sources */,
+				DDAAC6831EC8603C00466602 /* InvalidPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
