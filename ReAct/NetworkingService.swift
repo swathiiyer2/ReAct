@@ -13,10 +13,10 @@ import FirebaseStorage
 import FirebaseDatabase
 
 struct NetworkingService {
-    var databaseRef: FIRDatabaseReference! {
+    private var databaseRef: FIRDatabaseReference! {
         return FIRDatabase.database().reference()
     }
-    var storageRef: FIRStorageReference {
+    private var storageRef: FIRStorageReference {
         return FIRStorage.storage().reference()
     }
     

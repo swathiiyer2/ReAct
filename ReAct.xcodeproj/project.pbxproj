@@ -22,6 +22,7 @@
 		DDAAC6861EC8606D00466602 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC6851EC8606D00466602 /* NetworkingService.swift */; };
 		DDAAC6881EC8609B00466602 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC6871EC8609B00466602 /* ResetPasswordViewController.swift */; };
 		DDAAC68A1EC8610100466602 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC6891EC8610100466602 /* SignUpViewController.swift */; };
+		DDAAC68C1EC86CE900466602 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDAAC68B1EC86CE900466602 /* GoogleService-Info.plist */; };
 		DDBD2F4E1EBA962100826121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBD2F4D1EBA962100826121 /* Assets.xcassets */; };
 		DDC54A9A1EC83C190094503C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC54A991EC83C190094503C /* SettingsTableViewController.swift */; };
 		DDD7BE2D1EC834A300DF2A0E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD7BE2C1EC834A300DF2A0E /* SettingsViewController.swift */; };
@@ -67,6 +68,8 @@
 		DDAAC6851EC8606D00466602 /* NetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		DDAAC6871EC8609B00466602 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		DDAAC6891EC8610100466602 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DDAAC68B1EC86CE900466602 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DDAAC68D1EC86E7600466602 /* ReAct.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReAct.entitlements; sourceTree = "<group>"; };
 		DDBD2F4D1EBA962100826121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDC54A991EC83C190094503C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		DDD7BE2C1EC834A300DF2A0E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +124,7 @@
 		DD1A5AEA1EA7FB0B0028B509 = {
 			isa = PBXGroup;
 			children = (
+				DDAAC68B1EC86CE900466602 /* GoogleService-Info.plist */,
 				DD1A5AF51EA7FB0B0028B509 /* ReAct */,
 				DD1A5B0A1EA7FB0C0028B509 /* ReActTests */,
 				DD1A5B151EA7FB0C0028B509 /* ReActUITests */,
@@ -143,6 +147,7 @@
 		DD1A5AF51EA7FB0B0028B509 /* ReAct */ = {
 			isa = PBXGroup;
 			children = (
+				DDAAC68D1EC86E7600466602 /* ReAct.entitlements */,
 				DDAAC6841EC8605D00466602 /* Models */,
 				DDAAC67F1EC85FC600466602 /* View Controllers */,
 				DD1A5AF61EA7FB0B0028B509 /* AppDelegate.swift */,
@@ -269,6 +274,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 63VJ5F24HJ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					DD1A5B061EA7FB0C0028B509 = {
 						CreatedOnToolsVersion = 8.0;
@@ -310,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD1A5B011EA7FB0B0028B509 /* LaunchScreen.storyboard in Resources */,
+				DDAAC68C1EC86CE900466602 /* GoogleService-Info.plist in Resources */,
 				DDBD2F4E1EBA962100826121 /* Assets.xcassets in Resources */,
 				DD1A5AFC1EA7FB0B0028B509 /* Main.storyboard in Resources */,
 			);
@@ -547,11 +558,13 @@
 			baseConfigurationReference = F8A16E1313F7768ACC063BA2 /* Pods-ReAct.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ReAct/ReAct.entitlements;
 				DEVELOPMENT_TEAM = 63VJ5F24HJ;
 				INFOPLIST_FILE = ReAct/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swathi.ReAct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -561,6 +574,7 @@
 			baseConfigurationReference = 2C924F5DD2B91681F37242B2 /* Pods-ReAct.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ReAct/ReAct.entitlements;
 				DEVELOPMENT_TEAM = 63VJ5F24HJ;
 				INFOPLIST_FILE = ReAct/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
