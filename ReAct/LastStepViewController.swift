@@ -10,58 +10,36 @@ import Foundation
 
 import UIKit
 
-class LastStepViewController: UIViewController {
+class LastStepViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet weak var lastStepScroll: UIScrollView!
     @IBOutlet weak var lastStepView: UIView!
+    @IBOutlet weak var tableview: UITableView!
     
+    var lastStepArray = ["Apple", "Pear", "Banana", "Tomato"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //make an array of last step words
+    }
         
-//        let arrayOfVillains = ["santa", "bugs", "superman", "batman", "bugs", "superman", "batman", "bugs", "superman", "batman", "bugs", "superman", "batman", "bugs", "superman", "batman", "bugs", "superman", "batman", "bugs", "superman", "batman", "bugs", "superman", "batman", "bugs", "superman", "batman", "bugs", "superman", "batman", "bugs", "superman", "batman", "bugs", "superman", "batman", "bugs", "superman", "batman", "bugs", "superman", "batman", "bugs", "superman", "batman", "bugs", "superman", "batman", "bugs", "superman", "batman", "bugs", "superman", "batman"]
-        
-        
-        
-  //      var buttonY: CGFloat = 20  // our Starting Offset, could be 0
-//        for villain in arrayOfVillains {
-            
-            
-//            let villainButton = UIButton(frame: CGRect(x: 50, y: buttonY, width: 250, height: 30))
-//            buttonY = buttonY + 50  // we are going to space these UIButtons 50px apart
-            
-//            villainButton.layer.cornerRadius = 10  // get some fancy pantsy rounding
-//            villainButton.backgroundColor = UIColor.darkGray
-//            villainButton.setTitle("Button for Villain: \(villain)", for: UIControlState.normal) // We are going to use the item name as the Button Title here.
-//            villainButton.titleLabel?.text = "\(villain)"
-//           villainButton.addTarget(self, action: Selector(("villainButtonPressed:")), for: UIControlEvents.touchUpInside)
-            
-//            self.lastStepView.addSubview(villainButton)  // myView in this case is the view you want these buttons added
-//        }
-        
-        //var scroll = self.lastStepView
-        //var lastItem = scroll.subviews.last as! UIView
-        //var lastOriginY = lastItem.frame.origin.y
-        //var lastHeight = lastItem.frame.size.height
-        //var finalHeight = lastOriginY+lastHeight
-        
-        //scroll.frame = CGRectMake(0 , 0, lastItem.frame.size.width, finalHeight)
-        //self.lastStepScroll.contentSize = CGSizeMake(lastItem.frame.size.width, finalHeight)
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return lastStepArray.count
+        //array.count
+    }
     
-//    func villainButtonPressed(sender:UIButton!) {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "lastStepCell", for: indexPath)
         
-//        if sender.titleLabel?.text != nil {
-//            print("\nYou have chosen Villain: \(sender.titleLabel?.text)")
-//        } else {
-            
-//            print("\nNowhere to go :/")
-            
-//        }
-        
-//    }
-    
-    
-    
+       // let fruitName = fruits[indexPath.row]
+        //get object at that index for that row
+        let lastStepObject = lastStepArray[indexPath.row]
+        cell.textLabel?.text = lastStepObject
+        return cell
+    }
+ 
 }
