@@ -23,6 +23,7 @@
 		DDAAC6881EC8609B00466602 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC6871EC8609B00466602 /* ResetPasswordViewController.swift */; };
 		DDAAC68A1EC8610100466602 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC6891EC8610100466602 /* SignUpViewController.swift */; };
 		DDAAC68C1EC86CE900466602 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDAAC68B1EC86CE900466602 /* GoogleService-Info.plist */; };
+		DDAAC6911ECAD53E00466602 /* LastStepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC6901ECAD53E00466602 /* LastStepTableViewCell.swift */; };
 		DDBD2F4E1EBA962100826121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBD2F4D1EBA962100826121 /* Assets.xcassets */; };
 		DDC54A9A1EC83C190094503C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC54A991EC83C190094503C /* SettingsTableViewController.swift */; };
 		DDD7BE2D1EC834A300DF2A0E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD7BE2C1EC834A300DF2A0E /* SettingsViewController.swift */; };
@@ -70,6 +71,7 @@
 		DDAAC6891EC8610100466602 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DDAAC68B1EC86CE900466602 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DDAAC68D1EC86E7600466602 /* ReAct.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReAct.entitlements; sourceTree = "<group>"; };
+		DDAAC6901ECAD53E00466602 /* LastStepTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastStepTableViewCell.swift; sourceTree = "<group>"; };
 		DDBD2F4D1EBA962100826121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDC54A991EC83C190094503C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		DDD7BE2C1EC834A300DF2A0E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				DDAAC6821EC8603C00466602 /* InvalidPasswordViewController.swift */,
 				DDAAC6871EC8609B00466602 /* ResetPasswordViewController.swift */,
 				DDAAC6891EC8610100466602 /* SignUpViewController.swift */,
+				DDAAC6901ECAD53E00466602 /* LastStepTableViewCell.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				DD1A5AF71EA7FB0B0028B509 /* AppDelegate.swift in Sources */,
 				DDD7BE2D1EC834A300DF2A0E /* SettingsViewController.swift in Sources */,
 				DDAAC6881EC8609B00466602 /* ResetPasswordViewController.swift in Sources */,
+				DDAAC6911ECAD53E00466602 /* LastStepTableViewCell.swift in Sources */,
 				DDAAC6811EC8600500466602 /* EditProfileViewController.swift in Sources */,
 				DDAAC6831EC8603C00466602 /* InvalidPasswordViewController.swift in Sources */,
 			);

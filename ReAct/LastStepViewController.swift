@@ -16,11 +16,17 @@ class LastStepViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var lastStepView: UIView!
     @IBOutlet weak var tableview: UITableView!
     
-    var lastStepArray = ["Apple", "Pear", "Banana", "Tomato"]
+    
+    var lastStepArray = ["Apple", "Pear", "Banana", "Tomato", "Apple", "Pear", "Banana", "Tomato", "Apple", "Pear", "Banana", "Tomato"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableview.backgroundColor = UIColor.clear
         //make an array of last step words
+    }
+    
+   public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath){
+        cell.backgroundColor = UIColor.clear
     }
         
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -32,13 +38,20 @@ class LastStepViewController: UIViewController, UITableViewDelegate, UITableView
         //array.count
     }
     
+//    public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        var returnedView = UIView(frame: CGRectMake(x,y,width,height))
+//    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "lastStepCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "lastStepCell", for: indexPath) as! LastStepTableViewCell
+
         
        // let fruitName = fruits[indexPath.row]
+        cell.selector.image = UIImage(named: "plus")
+        cell.issue.text = lastStepArray[indexPath.row]
+
         //get object at that index for that row
-        let lastStepObject = lastStepArray[indexPath.row]
-        cell.textLabel?.text = lastStepObject
+        cell.textLabel?.text = ""
         return cell
     }
  
