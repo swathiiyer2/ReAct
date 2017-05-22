@@ -15,6 +15,8 @@
 		DD1A5B171EA7FB0C0028B509 /* ReActUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A5B161EA7FB0C0028B509 /* ReActUITests.swift */; };
 		DD1A5B251EA7FBBA0028B509 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A5B241EA7FBBA0028B509 /* LoginViewController.swift */; };
 		DD1A5B271EA7FBE80028B509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A5B261EA7FBE80028B509 /* ViewController.swift */; };
+		DD29D8721ED2ACEE0016A181 /* MainFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29D8711ED2ACEE0016A181 /* MainFeedViewController.swift */; };
+		DD29D8741ED2AF190016A181 /* MainFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29D8731ED2AF190016A181 /* MainFeedTableViewCell.swift */; };
 		DD34B9451EB68C0D00DAE999 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD34B9441EB68C0D00DAE999 /* QuartzCore.framework */; };
 		DDAAC67C1EC853CD00466602 /* LastStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC67B1EC853CD00466602 /* LastStepViewController.swift */; };
 		DDAAC6811EC8600500466602 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC6801EC8600500466602 /* EditProfileViewController.swift */; };
@@ -62,6 +64,8 @@
 		DD1A5B181EA7FB0C0028B509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD1A5B241EA7FBBA0028B509 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DD1A5B261EA7FBE80028B509 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD29D8711ED2ACEE0016A181 /* MainFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFeedViewController.swift; sourceTree = "<group>"; };
+		DD29D8731ED2AF190016A181 /* MainFeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFeedTableViewCell.swift; sourceTree = "<group>"; };
 		DD34B9441EB68C0D00DAE999 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DDAAC67B1EC853CD00466602 /* LastStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastStepViewController.swift; sourceTree = "<group>"; };
 		DDAAC6801EC8600500466602 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 				DDAAC6871EC8609B00466602 /* ResetPasswordViewController.swift */,
 				DDAAC6891EC8610100466602 /* SignUpViewController.swift */,
 				DDAAC6901ECAD53E00466602 /* LastStepTableViewCell.swift */,
+				DD29D8711ED2ACEE0016A181 /* MainFeedViewController.swift */,
+				DD29D8731ED2AF190016A181 /* MainFeedTableViewCell.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -402,6 +408,7 @@
 				DDC54A9A1EC83C190094503C /* SettingsTableViewController.swift in Sources */,
 				DD1A5B271EA7FBE80028B509 /* ViewController.swift in Sources */,
 				DDAAC67C1EC853CD00466602 /* LastStepViewController.swift in Sources */,
+				DD29D8741ED2AF190016A181 /* MainFeedTableViewCell.swift in Sources */,
 				DDAAC6861EC8606D00466602 /* NetworkingService.swift in Sources */,
 				DD1A5B251EA7FBBA0028B509 /* LoginViewController.swift in Sources */,
 				DD1A5AF71EA7FB0B0028B509 /* AppDelegate.swift in Sources */,
@@ -409,6 +416,7 @@
 				DDAAC6881EC8609B00466602 /* ResetPasswordViewController.swift in Sources */,
 				DDAAC6911ECAD53E00466602 /* LastStepTableViewCell.swift in Sources */,
 				DDAAC6811EC8600500466602 /* EditProfileViewController.swift in Sources */,
+				DD29D8721ED2ACEE0016A181 /* MainFeedViewController.swift in Sources */,
 				DDAAC6831EC8603C00466602 /* InvalidPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
