@@ -29,7 +29,8 @@ class SettingsViewController: UIViewController {
         if FIRAuth.auth()?.currentUser != nil {
             do {
                 try FIRAuth.auth()?.signOut()
-                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home")
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "Home") as UIViewController
                 present(vc, animated: true, completion: nil)
                 
             } catch let error as NSError {

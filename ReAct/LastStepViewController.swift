@@ -13,14 +13,15 @@ import UIKit
 class LastStepViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     var tableView : UITableView!
-    var selected = Set<String>()
+    var selectedIssues = Set<String>()
     
     @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var nextbutton: UIButton!
 
+    let networkingService = NetworkingService()
 
     
-    var lastStepArray = ["Apple", "Pear", "Banana", "Tomato", "Apple", "Pear", "Banana", "Tomato", "Apple", "Pear", "Banana", "Tomato"]
+    var lastStepArray = ["Apple", "Pear", "Banana", "Tomato", "Mango", "Pineapple", "Strawberry", "Blueberry", "Raspberry", "Blackberry", "Guava", "Kiwi"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,12 +52,21 @@ class LastStepViewController: UIViewController, UITableViewDelegate, UITableView
 
         
        // let fruitName = fruits[indexPath.row]
-        cell.selector.image = UIImage(named: "plus")
+        //cell.selector.image = UIImage(named: "plus")
         cell.issue.text = lastStepArray[indexPath.row]
 
         //get object at that index for that row
         cell.textLabel?.text = ""
         cell.selectionStyle = .none
+        if(!selectedIssues.contains(lastStepArray[indexPath.row])){
+            cell.issue.textColor = UIColor.white
+            cell.background.backgroundColor = UIColor.init(red: (106.0/255.0), green: (191.0/255.0), blue: (225.0/255.0), alpha: (1.0))
+            cell.selector.image = UIImage(named: "plus")
+        }else{
+            cell.issue.textColor = UIColor.init(red: (84.0/255.0), green: (199.0/255.0), blue: (252.0/255.0), alpha: (1.0))
+            cell.background.backgroundColor = UIColor.white
+            cell.selector.image = UIImage(named: "check")
+        }
         return cell
     }
     
@@ -72,7 +82,8 @@ class LastStepViewController: UIViewController, UITableViewDelegate, UITableView
         cell.background.backgroundColor = UIColor.white
         cell.textLabel?.text = ""
         cell.issue.text = lastStepArray[indexPath.row]
-        selected.insert(lastStepArray[indexPath.row])
+        selectedIssues.insert(lastStepArray[indexPath.row])
+        print(selectedIssues)
         nextbutton.isEnabled = true
         nextbutton.setTitleColor(UIColor.white, for: UIControlState.normal)
     }
@@ -89,14 +100,23 @@ class LastStepViewController: UIViewController, UITableViewDelegate, UITableView
         cell.background.backgroundColor = UIColor.init(red: (106.0/255.0), green: (191.0/255.0), blue: (225.0/255.0), alpha: (1.0))
         cell.textLabel?.text = ""
         cell.issue.text = lastStepArray[indexPath.row]
-        selected.remove(lastStepArray[indexPath.row])
-        if(selected.count == 0){
+        selectedIssues.remove(lastStepArray[indexPath.row])
+        print(selectedIssues)
+        if(selectedIssues.count == 0){
             nextbutton.isEnabled = false
             nextbutton.setTitleColor(UIColor.init(red: (106.0/255.0), green: (191.0/255.0), blue: (225.0/255.0), alpha: (1.0)), for: UIControlState.normal)
             
         }
     }
+    @IBAction func nextButtonPressed(_ sender: AnyObject) {
+        NSLog("buttonPressed")
+        self.performSegue(withIdentifier: "lastStep", sender: nil)
+    }
     
+    //@IBAction func nextAction(_ sender: AnyObject) {
+    //    networkingService.updateIssues(issue_areas: selectedIssues)
+        
+    //}
 
  
 }

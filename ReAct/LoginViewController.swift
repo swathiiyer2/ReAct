@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import FirebaseAuth
 
 class LoginViewController : UIViewController, UITextFieldDelegate{
     
@@ -41,10 +42,22 @@ class LoginViewController : UIViewController, UITextFieldDelegate{
         }
     }
     
+    @IBAction func forgotAction(_ sender: AnyObject) {
+        networkingService.resetPassword(email: emailField.text!)
+    }
     
     @IBAction func logInAction(_ sender: AnyObject) {
+        /*
         networkingService.signIn(email: emailField.text!, password: passwordField.text!)
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home")
-        present(vc, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if
+            FIRAuth.auth()?.currentUser != nil {
+            let vc = storyboard.instantiateViewController(withIdentifier: "logInSuccess") as UIViewController
+            present(vc, animated: true, completion: nil)
+        } else {
+            let vc = storyboard.instantiateViewController(withIdentifier: "logInFail") as UIViewController
+            present(vc, animated: true, completion: nil)
+        }
+ */
     }
 }

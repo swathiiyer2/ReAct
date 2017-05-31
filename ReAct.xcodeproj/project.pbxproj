@@ -18,6 +18,8 @@
 		DD29D8721ED2ACEE0016A181 /* MainFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29D8711ED2ACEE0016A181 /* MainFeedViewController.swift */; };
 		DD29D8741ED2AF190016A181 /* MainFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29D8731ED2AF190016A181 /* MainFeedTableViewCell.swift */; };
 		DD34B9451EB68C0D00DAE999 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD34B9441EB68C0D00DAE999 /* QuartzCore.framework */; };
+		DD556A641EDAACD0000CB431 /* ExploreIssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD556A631EDAACD0000CB431 /* ExploreIssuesViewController.swift */; };
+		DD9C4A8F1EDA942000638FDE /* ExploreIssuesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C4A8E1EDA942000638FDE /* ExploreIssuesTableViewCell.swift */; };
 		DDAAC67C1EC853CD00466602 /* LastStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC67B1EC853CD00466602 /* LastStepViewController.swift */; };
 		DDAAC6811EC8600500466602 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC6801EC8600500466602 /* EditProfileViewController.swift */; };
 		DDAAC6831EC8603C00466602 /* InvalidPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC6821EC8603C00466602 /* InvalidPasswordViewController.swift */; };
@@ -67,6 +69,8 @@
 		DD29D8711ED2ACEE0016A181 /* MainFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFeedViewController.swift; sourceTree = "<group>"; };
 		DD29D8731ED2AF190016A181 /* MainFeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFeedTableViewCell.swift; sourceTree = "<group>"; };
 		DD34B9441EB68C0D00DAE999 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DD556A631EDAACD0000CB431 /* ExploreIssuesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreIssuesViewController.swift; sourceTree = "<group>"; };
+		DD9C4A8E1EDA942000638FDE /* ExploreIssuesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreIssuesTableViewCell.swift; sourceTree = "<group>"; };
 		DDAAC67B1EC853CD00466602 /* LastStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastStepViewController.swift; sourceTree = "<group>"; };
 		DDAAC6801EC8600500466602 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		DDAAC6821EC8603C00466602 /* InvalidPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvalidPasswordViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +202,8 @@
 				DDAAC6901ECAD53E00466602 /* LastStepTableViewCell.swift */,
 				DD29D8711ED2ACEE0016A181 /* MainFeedViewController.swift */,
 				DD29D8731ED2AF190016A181 /* MainFeedTableViewCell.swift */,
+				DD9C4A8E1EDA942000638FDE /* ExploreIssuesTableViewCell.swift */,
+				DD556A631EDAACD0000CB431 /* ExploreIssuesViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -406,8 +412,10 @@
 			files = (
 				DDAAC68A1EC8610100466602 /* SignUpViewController.swift in Sources */,
 				DDC54A9A1EC83C190094503C /* SettingsTableViewController.swift in Sources */,
+				DD9C4A8F1EDA942000638FDE /* ExploreIssuesTableViewCell.swift in Sources */,
 				DD1A5B271EA7FBE80028B509 /* ViewController.swift in Sources */,
 				DDAAC67C1EC853CD00466602 /* LastStepViewController.swift in Sources */,
+				DD556A641EDAACD0000CB431 /* ExploreIssuesViewController.swift in Sources */,
 				DD29D8741ED2AF190016A181 /* MainFeedTableViewCell.swift in Sources */,
 				DDAAC6861EC8606D00466602 /* NetworkingService.swift in Sources */,
 				DD1A5B251EA7FBBA0028B509 /* LoginViewController.swift in Sources */,

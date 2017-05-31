@@ -96,4 +96,15 @@ struct NetworkingService {
     }
     
     
+    // update issue areas
+    func updateIssues(issue_areas: Set<String>) {
+        FIRAuth.auth()?.addStateDidChangeListener { (auth, user) in
+            // create issue reference
+            let issueRef = self.databaseRef.child("users").child((user?.uid)!).child("issue_areas")
+            
+            // save user info in database
+            issueRef.setValue(issue_areas)
+        }
+    }
+    
 }

@@ -8,30 +8,30 @@
 
 import Foundation
 
-
 import UIKit
 
 class MainFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
+    var tableView : UITableView!
+    @IBOutlet weak var tableview: UITableView!
     
-    @IBOutlet weak var mainFeedTable: UITableView!
+    var issuesArray = ["Homeless", "Abortion", "Environment", "Middle East", "LGBTQ"]
     
-    
-    
-    
-    var issuesArray = ["Homeless Bill", "Abortion Bill", "Environment Bill", "Middle East Bill", "LGBTQ Bill"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.tableview.backgroundColor = UIColor.clear
+        self.view.backgroundColor = UIColor.init(red: (115.0/255.0), green: (207.0/255.0), blue: (243.0/255.0), alpha: (1.0))
+        self.tableview.backgroundColor = UIColor.clear
         //nextbutton.isEnabled = false
         //make an array of last step words
     }
+    
     
     public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath){
         cell.backgroundColor = UIColor.white
     }
     
+   
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -45,24 +45,28 @@ class MainFeedViewController: UIViewController, UITableViewDelegate, UITableView
     //        var returnedView = UIView(frame: CGRectMake(x,y,width,height))
     //    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mainFeedCell", for: indexPath) as! MainFeedTableViewCell
         
-        
-        // let fruitName = fruits[indexPath.row]
-        cell.backgroundImage.image = UIImage(named: "plus")
-        cell.issue.text = issuesArray[indexPath.row]
-        
-        //get object at that index for that row
-        cell.textLabel?.text = ""
+    cell.reactButton.layer.borderColor = UIColor.init(red: (115.0/255.0), green: (207.0/255.0), blue: (243.0/255.0), alpha: (1.0)).cgColor
+
+        // what follows is just the default testing
+    
+        cell.backgroundImage.image = UIImage(named: "defaultImage")
+        cell.billTitle.text = issuesArray[indexPath.row]+" Bill"
+        cell.category.text = issuesArray[indexPath.row]
+        cell.timeLeft.text = "1d"
         cell.selectionStyle = .none
+ 
         return cell
     }
+ 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! LastStepTableViewCell
+        //let cell = tableView.cellForRow(at: indexPath) as! MainFeedTableViewCell
         
-        
+        /*
         cell.selector.image = UIImage(named: "check")
         
         //get object at that index for that row
@@ -74,12 +78,13 @@ class MainFeedViewController: UIViewController, UITableViewDelegate, UITableView
         selected.insert(lastStepArray[indexPath.row])
         nextbutton.isEnabled = true
         nextbutton.setTitleColor(UIColor.white, for: UIControlState.normal)
+        */
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! LastStepTableViewCell
+        //let cell = tableView.cellForRow(at: indexPath) as! MainFeedTableViewCell
         
-        
+        /*
         cell.selector.image = UIImage(named: "plus")
         
         //get object at that index for that row
@@ -94,7 +99,9 @@ class MainFeedViewController: UIViewController, UITableViewDelegate, UITableView
             nextbutton.setTitleColor(UIColor.init(red: (106.0/255.0), green: (191.0/255.0), blue: (225.0/255.0), alpha: (1.0)), for: UIControlState.normal)
             
         }
+        */
     }
+ 
     
     
     
